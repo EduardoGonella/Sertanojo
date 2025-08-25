@@ -52,40 +52,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-self: center;
-    height: 100%;
+    min-height: 100vh;
     width: 1000px;
     background-color: #A67B5B;
     /* border: 1px solid yellow; */
 }
 
-
-/* Página inícial ~ Ver */
-
-/* História ~ Nestor*/
-
-/* Agenda ~ Victor */
-
-/* Discografia ~ Eduardo*/
-
-/* Álbum de fotos ~ Nestor */
-
-/* Letra de Música ~ Eduardo */
-
-.img-msc-letra {
-    margin-top: 5vh;
-    justify-content: center;
-    justify-items: center;
-    width: inherit;
-    /* border: solid 1px green; */
-}
-
-.img-msc-letra img {
-    display: block;
-    width: 350px;
-    height: 350px;
-    justify-self: center;
-}
-
+/* Titulos */
 .titulo-h1 {
     color: #f6d7c2;
     margin-top: 5vh;
@@ -94,7 +67,66 @@ header {
     font-size: large;
 }
 
-.img-msc-letra .coluna {
+
+/* Página inícial ~ Victor e Eduardo */
+
+/* História ~ Nestor*/
+
+/* Agenda ~ Eduardo */
+.agenda {
+    margin-top: 5vh;
+    justify-content: center;
+    justify-items: center;
+    width: inherit;
+}
+
+/* colunas */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+[class^= "col-"] {
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.col-1 {flex: 1 1 calc(100% / 12);}
+.col-2 {flex: 1 1 calc(100% / 6);}
+.col-3 {flex: 1 1 calc(100% / 4);}
+.col-4 {flex: 1 1 calc(100% / 3);}
+.col-5 {flex: 1 1 calc(100% / 12 * 5);}
+.col-6 {flex: 1 1 calc(100% / 2);}
+.col-7 {flex: 1 1 calc(100% / 12 * 7);}
+.col-8 {flex: 1 1 calc(100% / 12 * 8);}
+.col-9 {flex: 1 1 calc(100% / 12 * 9);}
+.col-10 {flex: 1 1 calc(100% / 12 * 10);}
+.col-11 {flex: 1 1 calc(100% / 12 * 11);}
+.col-12 {flex: 1 1 100%;}
+
+/* Discografia ~ Victor */
+
+/* Álbum de fotos ~ Nestor */
+
+/* Letra de Música ~ Eduardo */
+
+.msc-letra {
+    margin-top: 5vh;
+    justify-content: center;
+    justify-items: center;
+    width: inherit;
+    /* border: solid 1px green; */
+}
+
+.msc-letra img {
+    display: block;
+    width: 350px;
+    height: 350px;
+    justify-self: center;
+}
+
+.msc-letra .coluna {
     gap: 10px;
     white-space: pre-line;
     color: #f6d7c2;
