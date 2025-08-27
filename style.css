@@ -183,4 +183,61 @@ textarea {
     font-size: 16px;
     width: 50%;       
     align-self: center;
+
+}
+
+.h1-historia{
+
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    
+}
+
+.container-topicos{
+    padding-left: 20%;
+    padding-right: 18%;
+}
+
+.h2-historia{
+    color: rgb(241, 241, 241);
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-historia{
+    font-size: 25px;
+    color: antiquewhite;
+    padding-bottom: 30px;
+}
+
+.img-centrada{
+    padding-left: 28%;
+    width: 70%;
+    
+}
+
+container-hist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item-hist{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.CascaoBB{
+    width: 2500px;
 }
