@@ -1,5 +1,3 @@
-/* Geral */
-
 * {
     padding: 0;
     margin: 0;
@@ -8,16 +6,16 @@
 
 body {
     background-color: #6F4E37;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Menu */
-
 header {
     height: 7vh;
     background-color: #825c41;
     position: fixed;
     width: 100%;
-    /* background-color: #6F4E37; */
+    z-index: 1000;
 }
 
 .menu {
@@ -25,219 +23,149 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    justify-self: center;
     height: inherit;
-    width: 1000px;
     list-style-type: none;
-}
-
-.menu li {
-    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .menu li a {
     text-decoration: none;
     background-color: #d6ae80;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 10px;
     display: block;
-    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
-/* Tudo */
-
+/* Container principal */
 .container {
-    padding-top: 7vh;
+    padding-top: 10vh;
     display: flex;
-    flex-direction: row;
-    justify-self: center;
-    min-height: 100vh;
-    width: 1000px;
-    background-color: #A67B5B;
-    /* border: 1px solid yellow; */
-}
-
-/* Titulos */
-.titulo-h1 {
-    color: #f6d7c2;
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    font-family: "Roboto", sans-serif;
-    font-size: large;
-}
-
-
-/* Página inícial ~ Victor e Eduardo */
-
-/* História ~ Nestor*/
-
-/* Agenda ~ Eduardo */
-.agenda {
-    margin-top: 5vh;
-    justify-content: center;
-    justify-items: center;
-    width: inherit;
-}
-
-/* colunas */
-.row {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-[class^= "col-"] {
-    background-color: white;
-    border: solid 1px black;
-    padding: 10px;
-}
-
-.col-1 {flex: 1 1 calc(100% / 12);}
-.col-2 {flex: 1 1 calc(100% / 6);}
-.col-3 {flex: 1 1 calc(100% / 4);}
-.col-4 {flex: 1 1 calc(100% / 3);}
-.col-5 {flex: 1 1 calc(100% / 12 * 5);}
-.col-6 {flex: 1 1 calc(100% / 2);}
-.col-7 {flex: 1 1 calc(100% / 12 * 7);}
-.col-8 {flex: 1 1 calc(100% / 12 * 8);}
-.col-9 {flex: 1 1 calc(100% / 12 * 9);}
-.col-10 {flex: 1 1 calc(100% / 12 * 10);}
-.col-11 {flex: 1 1 calc(100% / 12 * 11);}
-.col-12 {flex: 1 1 100%;}
-
-/* Discografia ~ Victor */
-
-/* Álbum de fotos ~ Nestor */
-
-/* Letra de Música ~ Eduardo */
-
-.msc-letra {
-    margin-top: 5vh;
-    justify-content: center;
-    justify-items: center;
-    width: inherit;
-    /* border: solid 1px green; */
-}
-
-.msc-letra img {
-    display: block;
-    width: 350px;
-    height: 350px;
-    justify-self: center;
-}
-
-.msc-letra .coluna {
-    gap: 10px;
-    white-space: pre-line;
-    color: #f6d7c2;
-    font-family: "Roboto", sans-serif;
-    font-size: large;
-}
-
-/* Página de contato ~ Victor */
-
-.contato-h1 {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 40px;
-    font-weight: normal;
-}
-
-form {
-    width: 100%;
     min-height: 100vh;
-    float: left;
-    background-color: #ffffff;
-    padding: 25px 50px 25px 50px;
-}
-
-form .form-group{
-    margin-top: 15px;
-}
-
-
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="file"],
-input[type="number"],
-input[type="tel"],
-select,
-textarea {
+    max-width: 1000px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin: 0 auto;
+    background-color: #A67B5B;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
-
-.botao {
-    padding: 12px;
-    background-color: #6F4E37;
+/* Títulos e textos */
+.h1-historia {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 50%;       
-    align-self: center;
-
+    font-size: 70px;
+    text-align: center;
+    margin-bottom:20px;
+    margin-top: 40px;
 }
 
-.h1-historia{
-
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 2px;
-    padding-top: 70px;
-    padding-bottom: 60px;
-    
-}
-
-.container-topicos{
-    padding-left: 20%;
-    padding-right: 18%;
-}
-
-.h2-historia{
+.h2-historia {
     color: rgb(241, 241, 241);
     font-size: 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.p-historia{
-    font-size: 25px;
+.p-historia {
+    font-size: 22px;
     color: antiquewhite;
-    padding-bottom: 30px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
-.img-centrada{
-    padding-left: 28%;
-    width: 70%;
-    
+/* Imagens */
+.img-centrada {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 8px;
 }
 
-container-hist{
+/* Layout das histórias */
+.container-hist {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.item-hist {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.item-hist{
-    display: flex;
-    align-items: center;
     gap: 20px;
-
+    width: 90%;
 }
 
-.CascaoBB{
-    width: 2500px;
+.item-hist.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.img-bb {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.item-hist img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.CebolaBB{
+    width: 300px;
+}
+
+.CascaoBB {
+    width: 100px;
+    height: auto;
+}
+
+/* Rodapé simples */
+footer {
+    background-color: #825c41;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.produto .preco {
+  font-weight: bold;
+  color: #2c7a2c;
+  font-size: 16px;
 }
